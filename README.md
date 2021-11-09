@@ -1,4 +1,32 @@
-Implementation of several state of the art segmentation method for binary tasks in PyTorch
+
+# AECNN: Adversarial and Enhanced Convolutional Neural Networks
+
+# Abstract
+
+Method for segmenting gastrointestinal polyps from colonscopy images uses an adversarial and enhanced convolutional neural net- works (AECNN). As the number of training images is small, the core of AECNN relies on fine-tuning an existing deep CNN model (ResNet152). AECNN’s enhanced convolutions incorporate both dense upsampling, which learns to up- sample the low-resolution feature maps into pixel-level segmentation masks, as well as hybrid dilation, which improves the dilated convolution by using different dilation rates for different layers. AECNN further boosts the perfor- mance of its segmenter by incorporating a discriminator competing with the segmenter, where both are trained through a generative adversarial network formulation.
+
+# Keywords
+Learning-to-augment, Data augmentation, Noise, X-ray images, Classification, COVID-19, Deep learning
+
+# Cite
+If you use our code, please cite our paper: 
+[AECNN: Adversarial and Enhanced Convolutional Neural Networks](https://www2.cs.sfu.ca/~hamarneh/ecopy/caagv2021.pdf)
+
+The corresponding bibtex entry is:
+
+```
+@incollection{izadi2021aecnn,
+  title={AECNN: Adversarial and Enhanced Convolutional Neural Networks},
+  author={Izadi, Saeed and Hamarneh, Ghassan},
+  booktitle={Computer-Aided Analysis of Gastrointestinal Videos},
+  pages={59--62},
+  year={2021},
+  publisher={Springer}
+}
+```
+
+# The source code
+The implementation for several state of the art binary segmentation method in PyTorch. This repo was developed for participating in "[Endoscopic Vision Challenge  - Gastointetinal Image Analysis 2018](https://giana.grand-challenge.org)". And we won the 2nd place for polyp segmentation using DUCHDC model. 
 
 Here are the implemented models:
 - [x] [FCN8]
@@ -39,4 +67,3 @@ python main.py --cuda eval
 The results will be place in the `results` directory
 
 
-This doc will be improved
