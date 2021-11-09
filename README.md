@@ -3,10 +3,10 @@
 
 # Abstract
 
-Method for segmenting gastrointestinal polyps from colonscopy images uses an adversarial and enhanced convolutional neural net- works (AECNN). As the number of training images is small, the core of AECNN relies on fine-tuning an existing deep CNN model (ResNet152). AECNN’s enhanced convolutions incorporate both dense upsampling, which learns to up- sample the low-resolution feature maps into pixel-level segmentation masks, as well as hybrid dilation, which improves the dilated convolution by using different dilation rates for different layers. AECNN further boosts the perfor- mance of its segmenter by incorporating a discriminator competing with the segmenter, where both are trained through a generative adversarial network formulation.
+Method for segmenting gastrointestinal polyps from colonscopy images uses an adversarial and enhanced convolutional neural networks (AECNN). As the number of training images is small, the core of AECNN relies on fine-tuning an existing deep CNN model (ResNet152). AECNN’s enhanced convolutions incorporate both dense upsampling, which learns to upsample the low-resolution feature maps into pixel-level segmentation masks, as well as hybrid dilation, which improves the dilated convolution by using different dilation rates for different layers. AECNN further boosts the performance of its segmenter by incorporating a discriminator competing with the segmenter, where both are trained through a generative adversarial network formulation.
 
 # Keywords
-Learning-to-augment, Data augmentation, Noise, X-ray images, Classification, COVID-19, Deep learning
+Segmentation, Binary segmentation, Deep learning, polyp segmentation, Endoscopy analysis
 
 # Cite
 If you use our code, please cite our paper: 
